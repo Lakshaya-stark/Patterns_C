@@ -1,15 +1,14 @@
-#include <stdio.h>
-
+->include <stdio.h>
 
 int SQUARE(){
 
 int n, row;
 
-printf("Select the Element type of the Square\n1. Star\n2. Numbers\n3. Alphabets\n# ");
+printf("Select the Element type of the Square\n1. Star\n2. Numbers\n3. Alphabets\n-> ");
 scanf("%d",&n);
 switch(n){
 case 1:
-    printf("Enter the Number of Rows # ");
+    printf("Enter the Number of Rows -> ");
     scanf("%d",&row);
     for(int i = 1; i <= row; i++){
         for(int j = 1; j <= row; j++){
@@ -20,7 +19,7 @@ case 1:
     break;
 
 case 2:
-    printf("Enter the Number of Rows # ");
+    printf("Enter the Number of Rows -> ");
     scanf("%d",&row);
     for(int i = 1; i <= row; i++){
         for(int j = 1; j <= row; j++){
@@ -31,7 +30,7 @@ case 2:
     break;
 
 case 3:
-    printf("Enter the Number of Rows # ");
+    printf("Enter the Number of Rows -> ");
     scanf("%d",&row);
     for(int i = 1; i <= row; i++){
         for(int j = 1; j <= row; j++){
@@ -51,13 +50,13 @@ int RECTANGLE(){
 
 int n, row, col;
 
-printf("Enter the Elements type of Rectangle\n1. Star\n2. Numbers\n3. Alphabets\n#  ");
+printf("Enter the Elements type of Rectangle\n1. Star\n2. Numbers\n3. Alphabets\n->  ");
 scanf("%d",&n);
 switch(n){
 case 1:
-    printf("Enter the Number of Rows # ");
+    printf("Enter the Number of Rows -> ");
     scanf("%d",&row);
-    printf("Enter the Number of Columns # ");
+    printf("Enter the Number of Columns -> ");
     scanf("%d",&col);
     for(int i = 1; i <= row; i++){
         for(int j = 1; j <= col; j++){
@@ -68,9 +67,9 @@ case 1:
     break;
 
 case 2:
-    printf("Enter the Number of Rows # ");
+    printf("Enter the Number of Rows -> ");
     scanf("%d",&row);
-    printf("Enter the Number of Columns # ");
+    printf("Enter the Number of Columns -> ");
     scanf("%d",&col);
     for(int i = 1; i <= row; i++){
         for(int j = 1; j <= col; j++){
@@ -81,9 +80,9 @@ case 2:
     break;
 
 case 3:
-    printf("Enter the Number of Rows # ");
+    printf("Enter the Number of Rows -> ");
     scanf("%d",&row);
-    printf("Enter the Number of Columns # ");
+    printf("Enter the Number of Columns -> ");
     scanf("%d",&col);
     for(int i = 1; i <= row; i++){
         for(int j = 1; j <= col; j++){
@@ -96,16 +95,15 @@ default:
     printf("Please Choose something valid :( ");
 }
 return 0;
-
 }
 
 
 int TRIANGLE(){
 int n, height, cnt = 0, pascal = 1;
 
-printf("Select the type of Triangle #\n1. Star\n2. Number\n3. Alphabet\n4. 0-1\n5. Pascal\n6. Odd Numbered Triangle\n# ");
+printf("Select the type of Triangle ->\n1. Star\n2. Number\n3. Alphabet\n4. 0-1\n5. Pascal\n6. Odd Numbered Triangle\n-> ");
 scanf("%d",&n);
-printf("Enter the Height of the triangle # ");
+printf("Enter the Height of the triangle -> ");
 scanf("%d",&height);
 
 
@@ -195,9 +193,9 @@ return 0;
 int HOLLOW_RECTANGLE(){
 
 int row, col;
-printf("Enter the number of rows # ");
+printf("Enter the number of rows -> ");
 scanf("%d",&row);
-printf("Enter the number of columns # ");
+printf("Enter the number of columns -> ");
 scanf("%d",&col);
 
 for(int i=1; i<=row; i++){
@@ -217,7 +215,7 @@ return 0;
 
 int CROSS(){
 int n;
-printf("Enter any odd number # ");
+printf("Enter any odd number -> ");
 scanf("%d",&n);
 
 for(int i=1; i<=n; i++){
@@ -237,7 +235,7 @@ return 0;
 
 int RHOMBUS(){
 int n;
-printf("Enter the Side value of Rhombus # ");
+printf("Enter the Side value of Rhombus -> ");
 scanf("%d", &n);
 
 for(int i = 1; i<=n; i++){
@@ -256,9 +254,9 @@ return 0;
 int PYRAMID(){
 
 int n, height, cnt=0,temp=1;
-printf("Enter the type of pyramid #\n1. Star\n2. Alphabet\n3. Number\n4. Unique\n");
+printf("Enter the type of pyramid ->\n1. Star\n2. Alphabet\n3. Number\n4. Unique\n");
 scanf("%d",&n);
-printf("Enter the Height of the pyramid # ");
+printf("Enter the Height of the pyramid -> ");
 scanf("%d",&height);
 
 switch(n){
@@ -275,6 +273,7 @@ case 1:
         printf("\n");
         cnt++;
     }
+    break;
 case 2:
     for(int i=0; i<height; i++){
             temp = 1;
@@ -334,15 +333,13 @@ default:
     printf("Please Enter something valid :(");
     break;
 }
-
-
 return 0;
 }
 
 
 int DIAMOND(){
 int height;
-printf("Enter the height of the diamond # ");
+printf("Enter the height of the diamond -> ");
 scanf("%d",&height);
 int nsp =  height/2;
 int nst = 1;
@@ -369,7 +366,7 @@ return 0;
 }
 int TABLE(){
 int n;
-printf("Enter the number of lines # ");
+printf("Enter the number of lines -> ");
 scanf("%d",&n);
 int nst = n, nsp = 1;
 
@@ -392,7 +389,7 @@ return 0;
 
 int NUMBERZOOM(){
 int n;
-printf("Enter any number # ");
+printf("Enter any number -> ");
 scanf("%d",&n);
 int min = 0,a,b;
 for(int i=1; i<=2*n-1; i++){
@@ -407,9 +404,7 @@ for(int i=1; i<=2*n-1; i++){
     }
     printf("\n");
 }
-
 return 0;
-
 }
 
 int main()
